@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-info" (click)="addCategory()">Add  Category</button>
+    </div>
+    <table class="table table-bordered table-info table-striped table-hover"style="margin-top:2%;">
+        <thead>
+        <tr>
+            <th>CategoryNo</th>
+            <th>Category Name</th>  
+        </tr>
+        </thead>
+
+        <tr *ngFor="let category of categories" >
+            <td>{{category.category_id}}</td>
+            <td>{{category.category_name}}</td>
+        </tr>
+    </table>
+</div>
+
